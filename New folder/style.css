@@ -3,12 +3,49 @@
 
 #header{
 	width: auto;
-	height: 40%;
+	height: 20%;
 	background: #1C1AF0;
 }
 
 #botton{
 	width: auto;
-	height: 312.5%;
-	background: linear-gradient(to left, blue , white)
+	height: 100%;
+	background: #FF0B0F;
+}
+
+#panel{
+	width: 100%;
+	height: 75%;
+	background: #000000;
+}
+
+#paneltext{
+	width: 50%;
+	color: aliceblue;
+	padding: 1%;
+	font-size: 170%;
+	line-height: 5%;
+}
+
+li{
+	padding: 20px;
+	color: aliceblue;
+	font-size: 200%;
+	
+}
+
+a{
+	text-decoration: none;
+}
+
+li:hover{
+	background: #FF0B0F;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+
+}
+
+a:visited{
+	color:aqua;
+	text-decoration: none;
 }
