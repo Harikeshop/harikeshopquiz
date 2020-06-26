@@ -19,11 +19,13 @@
 	
 }
 
-#panel ul{
+#panel li{
 	display: inline-flex;
 }
 a{
-	margin: 110px;
+	margin-left: 180px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 	color: white;
 	text-decoration: none;
 	font: bold;
@@ -59,8 +61,13 @@ a:hover{
 	margin: 0;
 }
 
-#panel ul li:hover .quiz{
-	display:contents;
-	position: absolute;
+#panel a:hover{
+    color: lightgreen;
+    transition-delay: 0.5s;
+
+}
+
+#panel a:active{
+    color: yellow;
 }
 
