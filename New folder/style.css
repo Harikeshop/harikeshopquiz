@@ -2,50 +2,65 @@
 /* CSS Document */
 
 #header{
-	width: auto;
-	height: 20%;
-	background: #1C1AF0;
-}
-
-#botton{
-	width: auto;
-	height: 100%;
-	background: #FF0B0F;
-}
-
-#panel{
-	width: 100%;
-	height: 75%;
 	background: #000000;
 }
 
-#paneltext{
-	width: 50%;
-	color: aliceblue;
-	padding: 1%;
-	font-size: 170%;
-	line-height: 5%;
-}
-
-li{
-	padding: 20px;
-	color: aliceblue;
-	font-size: 200%;
+#header h1{
+	color: white;
+	display: inline-flex;
+	text-align: center;
+	padding-left: 40%;
+	font-size: 300%;
 	
 }
 
+#panel {
+	background: darkgreen;
+	
+}
+
+#panel ul{
+	display: inline-flex;
+}
 a{
+	margin: 110px;
+	color: white;
+	text-decoration: none;
+	font: bold;
+	font-size: 200%;
+}
+
+#panel a:visited{
 	text-decoration: none;
 }
 
-li:hover{
-	background: #FF0B0F;
-	transition-duration: 1s;
-	transition-timing-function: linear;
-
+a:hover{
+	background: blue;
+	border-radius: 10px;
+	transition-duration: 0.5s;
 }
 
-a:visited{
-	color:aqua;
-	text-decoration: none;
+#panel li {
+	list-style-type: none;
+	
 }
+
+#quiz{
+	height: 20%;
+	width: 30%;
+	background: darkgreen;
+	position: absolute;
+	display: none;
+	margin: 10px;
+}
+#quiz a{
+	color: aliceblue;
+	font-size: 150%;
+	margin: 0;
+}
+
+#panel ul li:hover .quiz{
+	display:contents;
+	position: absolute;
+}
+
