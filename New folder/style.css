@@ -12,6 +12,7 @@
 	font-size: 300%;
 	text-align: center;
 	
+	
 }
 
 #panel {
@@ -74,5 +75,10 @@ a:hover{
 iframe{
     width: 100%;
     height: 500px;
+}
+
+img{
+	width: 5%;
+	height: 5%;
 }
 
