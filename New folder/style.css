@@ -1,99 +1,51 @@
 @charset "utf-8";
-/* CSS Document */
 
-#header{
-	background: #000000;
+#panel{
+	width: 100%;
+	height: auto;
+	background-color: black;
 }
 
-#header h1{
+#panel a{
+	font-size: 40px;
 	color: white;
-	display: inline-flex;
-	text-align: center;
-	font-size: 300%;
-	text-align: center;
-	
-	
-}
-
-#panel {
-	background: darkgreen;
-	
-}
-
-#panel li{
-	display: inline-flex;
-}
-a{
-	margin-left: 130px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-	color: white;
+	padding-left: 65px;
+	padding-right: 65px;
 	text-decoration: none;
-	font: bold;
-	font-size: 200%;
-}
-
-#panel a:visited{
-	text-decoration: none;
-}
-
-a:hover{
-	background: blue;
-	border-radius: 10px;
-	transition-duration: 0.5s;
-}
-
-#panel li {
-	list-style-type: none;
-	
-}
-
-#quiz{
-	height: 20%;
-	width: 30%;
-	background: darkgreen;
-	position: absolute;
-	display: none;
-	margin: 10px;
-}
-#quiz a{
-	color: aliceblue;
-	font-size: 150%;
-	margin: 0;
 }
 
 #panel a:hover{
-    color: lightgreen;
-    transition-delay: 0.5s;
-
+	opacity: 50%;
+	background-color: rgb(49, 48, 48);
 }
 
-#panel a:active{
-    color: yellow;
-}
-
-iframe{
-    width: 100%;
-    height: 500px;
-}
-
-img{
-	width: 5%;
-	height: 5%;
-}
-
-#image{
-	background-image: url(https://harikeshop.github.io/harikeshopquiz/New%20folder/2d0306fc-4d75-4c2d-a667-663bfcbf9f4f.jpg);
+#pane a:visited{
+	text-decoration: none;
 	color: white;
 }
 
-#image img{
-	margin-top: 2%;
+#sub_text h3{
+	text-align: center;
+	animation: change 1s step-end both;
+
 }
 
-body{-webkit-touch-callout:none;-webkit-user-select: none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;}
+@keyframes change {
+	from{color: green;}
+	to{color: red;}
+	from{color: violet;}
+	to{color: indigo;}
+	from{color: blue;}
+	to{color: yellow;}
+	from{color: orange;}
+	to{color: red;}
 
-img {
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
 }
+
+#data iframe{
+	width: 100%;
+	height: 500px;
+}
+
+
+

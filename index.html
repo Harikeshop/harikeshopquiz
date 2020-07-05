@@ -1,43 +1,44 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<script language = "javascript" type = "text/javascript">
-			document.querySelector('img').addEventListener(oncontextmenu, (e) => {
-   		    e.preventDefault();
-			})
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="New folder/style.css">
+	<meta http-equiv="X-UA Compitable" content="ie=edge">
+	<link rel="icon" href="New folder/DD Golden Alphabet 67511.png">
+	<title>HarikeshOP</title>
+</head>
+<body>
+<div id="panel">
+	<a href="index.html">Home</a>
+	<a href="#">About</a>
+	<a href="New folder/Contact.html">Contect</a>
+	<a href="New folder/quiz.html">Quizzes</a>
+	<a href="പത്രവാർത്താക്വിസ്സ് ഉത്തരങ്ങൾ.pdf">QuizAnwers</a>
+</div>
 
-		</script>
-		<meta name="viewport" content="widht= divice-width,initial-scale=1">
-		<meta name="theme-color" content="darkgreen" >
-		<meta charset="utf-8">
-		<meta property="og:title" content="News paper quiz" />
-		<meta property="og:image" content="https://harikeshop.github.io/harikeshopquiz/New%20folder//DD%20Golden%20Alphabet%2067511.png">
-	
-		<link rel="stylesheet" type="text/css" href="New folder/style.css">
-		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<title>Harikesh O P</title>
-		<link rel="icon" href="New folder/DD Golden Alphabet 67511.png">
-	</head>
-	
-	<body>
-		<div id="header">
-			<ul>
-			<h1>GK ZONE</h1>
-			</ul>
-		</div>
-		<p style="margin-left: 10%;">സി എച് എം പത്രവാർത്താക്വിസ്സിൽ പങ്കെടുക്കാൻ <b>Quizes</b>  എന്ന ടാബിൽ ക്ലിക്ക് ചെയ്യുക.ഉത്തരങ്ങൾക്ക് Quiz Answers ക്ലിക്ക് ചെയ്യുക</p>
-        <div id="panel">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="New%20folder/quiz.html" target="_blank">Quizes</a></li>
-				<li><a href="New folder/Contact.html">Contact</a></li>
-				<li><a target="_blank" href="പത്രവാർത്താക്വിസ്സ് ഉത്തരങ്ങൾ.pdf">Quiz Answers</a></li>
-		</div>
-		<div id="image">
-			<img style="align-content: center; margin-left: 40%;width: 20%; height: 30%;" src="Winner/1/WhatsApp Image 2020-06-28 at 4.01.04 PM.jpeg">
-		</div>
-        <iframe style="height: 100; width: 100%;" src="New%20folder/Body%20secondary-.html">
-		</iframe>
-		<footer style="text-align: center;">&copy;Copy Right Harikesh O P</footer>
-	</body>
+<div id="sub_text" onload="setIntreval(changeColor, 1000)">
+	<h3 id="direction">സി എച് എം ഓൺലൈൻ ക്വിസ്സിൽ പങ്കെടുക്കാൻ <b>Quizzes</b> ടാബിൽ ക്ലിക്ക് ചെയ്യുക</h3>
+
+	<script>
+		function changeColor(){
+			var x = document.getElementById("direction");
+			if(x.style.color=="black")
+			x.style.color=="red";
+			else if (x.style.color=="red")
+			x.style.color=="darkgreen";
+		}
+
+	</script>
+
+
+</div>
+
+<div id="data">
+	<iframe src="New%20folder/Body%20secondary-.html">
+
+	</iframe>
+</div>
+
+</body>
 </html>
