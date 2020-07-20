@@ -14,14 +14,57 @@
     <div class="register-photo">
         <div class="form-container">
             <form method="post">
-                <h2 class="text-center"><strong>Registration</strong>For monthly quiz</h2>
-                <div class="form-group"><input class="form-control" type="text" name="name" placeholder="Name"></div>
-                <div class="form-group"><input class="form-control" type="email" name="email" placeholder="Email"></div>
-                <div class="form-group"><input class="form-control" type="number" name="phonenumber" placeholder="Phone Number"></div>
+                <h2 class="text-center"><strong>Registration&nbsp;</strong>For monthly quiz</h2>
+              <div  class="form-group"><input id="name" class="form-control" type="text" name="entry.1305836039" placeholder="Name"></div>
+                <div class="form-group"><input id="email" class="form-control" type="email" name="entry.120982633" placeholder="Email"></div>
+                <div class="form-group"><input id="phone" class="form-control" type="number" name="entry.37959704" placeholder="Phone Number"></div>
                 <div class="form-group">
                     <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox">I agree to paticipate.</label></div>
                 </div>
-                <div class="form-group"><button class="btn btn-primary btn-block" type="submit">Register</button></div></form>
+                <div class="form-group"><button id="submit" class="btn btn-primary btn-block" type="submit">Register</button></div>
+				
+				<script type="text/javascript">
+					function postToGoogle() {
+                var field1 = $("#name").val();
+                var field2 = $("#emai").val();
+                var field3 = $("#phone").val();
+ 				
+				if(field1 == ""){
+					alert('Please Fill Your Name');
+					document.getElementById("name").focus();
+					return false;
+				}
+				if(field2 == ""){
+					alert('Please Fill Your Email');
+					document.getElementById("emai").focus();
+					return false;
+				}
+				if(field3 == "" || field3.length > 10 || field3.length < 10){
+					alert('Please Fill Your Mobile Number');
+					document.getElementById("phone").focus();
+					return false;
+				}
+						
+						  $.ajax({
+                    url: "https://docs.google.com/forms/d/e/1FAIpQLSe--tDqkZ427ILjjoeZw78FRrGcLAmuYVK_ye0sz3K9sHwwAA/formResponse?",
+					data: {"entry.1305836039": field1, "entry.120982633": field2, "entry.37959704": field3,
+                    type: "POST",
+                    dataType: "xml",
+                    success: function(d)
+					{
+					},
+					error: function(x, y, z)
+						{
+
+							$('#success-msg').show();
+							$('#form').hide();
+							
+						}
+                });
+				return false;
+            }
+				</script>
+			</form>
         </div>
     </div>
     <script src="assets/js/jquery.min.js"></script>
