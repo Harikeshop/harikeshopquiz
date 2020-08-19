@@ -1,0 +1,21 @@
+<convert2exe>
+    <uacLevel>asInvoker</uacLevel>
+    <launcher>C:\Users\Admin\AppData\Local\Adersoft\Vbsedit\x64\html64c_vbsedit.exe</launcher>
+    <dependencies>
+        <dependency>assets\css\styles.min.css</dependency>
+        <dependency>New folder\DD Golden Alphabet 67511.png</dependency>
+    </dependencies>
+    <createmsi>no</createmsi>
+    <msi>
+        <targetFolder>C:\Users\Admin\Dropbox\My PC (ADMINRG-ORO0DBL)\Desktop\harikeshopquiz\index_msi</targetFolder>
+        <version>1.0.0.0</version>
+        <description>MSI package for Index</description>
+        <productName>Index</productName>
+        <manufacturer>Admin</manufacturer>
+        <scope>perUser</scope>
+        <upgradeCode>{A5B50CCD-050B-4329-9223-A710F9D5786A}</upgradeCode>
+        <desktopShortcut>yes</desktopShortcut>
+        <startmenuShortcut>yes</startmenuShortcut>
+        <dependencies />
+    </msi>
+</convert2exe>
